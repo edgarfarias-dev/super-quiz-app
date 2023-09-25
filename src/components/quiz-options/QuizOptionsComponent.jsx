@@ -24,7 +24,7 @@ const QuizOptionsComponent = ({ keyOption, option, handleQuestion, isRight, clic
 
     let renderButton = (
         <Button
-            color={clicked && keyOption === keyOptionClicked ? "warning" : "info"}
+            color={clicked && keyOption === keyOptionClicked ? "secondary" : "info"}
             className="btn-block" size="large" onClick={() => handleQuestion(keyOption)}>
             {option} 
         </Button>
